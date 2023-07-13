@@ -16,10 +16,9 @@ return new class extends Migration
             $table->String('titre');
             $table->String('titulaire_habilitation');
             $table->String('annee');
-            $table->String('file');
-            $table->String('encadrant');
 
-            $table->foreign('file')->references('path')->on('files');
+            $table->String('encadrant');
+            $table->unsignedBigInteger('idFile');
             $table->timestamps();
         });
     }

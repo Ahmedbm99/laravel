@@ -16,10 +16,11 @@ return new class extends Migration
             $table->String('type');
             $table->String('annee');
             $table->String('titre');
-            $table->String('file');
+
             $table->String('conference_name');
             $table->String('classe');
-            $table->foreign('file')->references('path')->on('files');
+            $table->unsignedBigInteger('idFile');
+
             $table->timestamps();
         });
     }

@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('titre');
             $table->string('annee');
-            $table->string('file');
+            $table->unsignedBigInteger('idFile');
+
             $table->text('sujet');
             $table->date('date');
-            $table->foreign('file')->references('path')->on('files');
+
             $table->timestamps();
         });
     }

@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('actualites', function (Blueprint $table) {
             $table->id();
-            $table->String('titre');
-            $table->String('description');
+            $table->string('titre');
+            $table->string('description');
             $table->date('date');
-            $table->String('image');
-            $table->foreign('image')->references('path')->on('files');
+            $table->unsignedBigInteger('idFile');
+
         });
+
     }
 
     /**

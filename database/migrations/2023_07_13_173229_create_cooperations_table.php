@@ -19,8 +19,8 @@ return new class extends Migration
             $table->date('dateDebut');
             $table->date('dateFin');
             $table->text('sujet');
-            $table->String('file');
-            $table->foreign('file')->references('path')->on('files');
+            $table->unsignedBigInteger('idFile');
+
             $table->timestamps();
         });
     }

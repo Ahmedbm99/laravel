@@ -33,13 +33,15 @@ return new class extends Migration
             $table->String('scholar');
             $table->date('dateDernierDiplome');
             $table->String('description');
-            $table->String('image');
+
             $table->String('verify_token');
             $table->String('verify_status');
             $table->integer('approve');
             $table->integer('code');
             $table->integer('etat');
-            $table->foreign('image')->references('path')->on('files');
+            $table->unsignedBigInteger('idFile');
+
+
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->Integer('annee');
             $table->String('titre');
             $table->String('lienDOI');
-            $table->String('file');
+            $table->bigInteger('idFile');
             $table->date('datePublication');
             $table->String('titreJournal');
             $table->String('quartileJournal');
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->String('indexation');
             $table->String('siteRevue');
 
-            $table->foreign('file')->references('path')->on('files');
+
             $table->timestamps();
         });
     }
