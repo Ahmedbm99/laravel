@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('theses', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('annee');
+            $table->String('memoire');
+            $table->text('sujet');
+            $table->integer('anneeInscription');
+
+
             $table->timestamps();
         });
     }

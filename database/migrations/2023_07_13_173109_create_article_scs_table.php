@@ -13,6 +13,20 @@ return new class extends Migration
     {
         Schema::create('article_scs', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->Integer('annee');
+            $table->String('titre');
+            $table->String('lienDOI');
+            $table->String('file');
+            $table->date('datePublication');
+            $table->String('titreJournal');
+            $table->String('quartileJournal');
+            $table->String('volume');
+            $table->String('facteur');
+            $table->String('indexation');
+            $table->String('siteRevue');
+
+            $table->foreign('file')->references('path')->on('files');
             $table->timestamps();
         });
     }

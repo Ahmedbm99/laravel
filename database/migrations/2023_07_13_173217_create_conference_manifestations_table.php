@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('conference_manifestations', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('lieu');
+            $table->integer('prix');
+            $table->date('dateDebut');
+            $table->date('dateFin');
+            $table->String('classe');
+
+
             $table->timestamps();
         });
     }

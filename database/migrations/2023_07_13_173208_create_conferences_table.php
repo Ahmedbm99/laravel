@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('conferences', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->String('annee');
+            $table->String('titre');
+            $table->String('file');
+            $table->String('conference_name');
+            $table->String('classe');
+            $table->foreign('file')->references('path')->on('files');
             $table->timestamps();
         });
     }

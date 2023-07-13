@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('manifestations', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->String('titre');
+            $table->date('dateDebut');
+            $table->date('dateFin');
             $table->timestamps();
         });
     }

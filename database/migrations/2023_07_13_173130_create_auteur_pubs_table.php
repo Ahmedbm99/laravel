@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('auteur_pubs', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->String('titre');
+            $table->String('auteur');
+            $table->String('mail_auteur');
+            $table->date('date');
+            $table->String('soummissionnaire');
+            $table->integer('approve');
+
+
             $table->timestamps();
         });
     }

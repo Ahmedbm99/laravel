@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('ouvrage_scs', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->String('annee');
+            $table->String('titre');
+            $table->String('editeur');
+            $table->String('lienEditeur');
+            $table->String('ISBN/Issn');
+            $table->date('date');
             $table->timestamps();
         });
     }

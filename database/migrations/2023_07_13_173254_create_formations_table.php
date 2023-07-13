@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('formations', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('formateur');
+            $table->String('lieu');
+            $table->String('prix');
+            $table->date('dateDebut');
+            $table->date('dateFin');
             $table->timestamps();
         });
     }

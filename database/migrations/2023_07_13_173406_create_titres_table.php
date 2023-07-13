@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('titres', function (Blueprint $table) {
             $table->id();
+            $table->String('mail');
+            $table->integer('code');
+            $table->integer('confirme');
+
             $table->timestamps();
         });
     }

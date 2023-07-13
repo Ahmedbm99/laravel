@@ -12,7 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('auteur_projs', function (Blueprint $table) {
+
             $table->id();
+            $table->String('type');
+            $table->String('titre');
+            $table->String('encadrant');
+            $table->String('mail_encadrant');
+            $table->date('date');
+            $table->String('soummissionnaire');
+            $table->integer('approve');
+
+
             $table->timestamps();
         });
     }

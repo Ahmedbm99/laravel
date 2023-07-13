@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('cooperations', function (Blueprint $table) {
             $table->id();
+            $table->String('type');
+            $table->String('institution');
+            $table->String('intervenant');
+            $table->date('dateDebut');
+            $table->date('dateFin');
+            $table->text('sujet');
+            $table->String('file');
+            $table->foreign('file')->references('path')->on('files');
             $table->timestamps();
         });
     }

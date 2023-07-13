@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('brevets', function (Blueprint $table) {
             $table->id();
+            $table->string('titre');
+            $table->string('annee');
+            $table->string('file');
+            $table->text('sujet');
+            $table->date('date');
+            $table->foreign('file')->references('path')->on('files');
             $table->timestamps();
         });
     }

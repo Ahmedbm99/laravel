@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('pves', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('file');
+            $table->text('description');
+            $table->String('encadrant');
+            $table->String('co-encadrant');
+            $table->String('institution');
+            $table->String('etudiant');
+            $table->date('dateDebut');
+            $table->date('dateFin');
             $table->timestamps();
         });
     }

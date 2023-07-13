@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('domaines', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('descriptions');
             $table->timestamps();
         });
     }

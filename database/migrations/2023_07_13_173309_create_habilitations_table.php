@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('habilitations', function (Blueprint $table) {
             $table->id();
+            $table->String('titre');
+            $table->String('titulaire_habilitation');
+            $table->String('annee');
+            $table->String('file');
+            $table->String('encadrant');
+
+            $table->foreign('file')->references('path')->on('files');
             $table->timestamps();
         });
     }
