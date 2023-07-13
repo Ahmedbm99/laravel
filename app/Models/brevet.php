@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class brevet extends Model
 {
-    use HasFactory;
+    protected $fillable = ['titre', 'annee', 'idFile' , 'sujet' , 'date' ];
+
 }

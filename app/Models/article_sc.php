@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class article_sc extends Model
 {
-    use HasFactory;
+    protected $fillable = ['type', 'annee', 'titre' , 'lienDOI' , 'idFile' , 'datePublication', 'titreJournal', 'quartileJournal' , 'volume' , 'facteur' , 'indexation' , 'siteRevue'];
 }

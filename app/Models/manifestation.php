@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class manifestation extends Model
 {
+    protected $fillable = ['type', 'titre', 'dateDebut' , 'dateFin' ];
     use HasFactory;
 }

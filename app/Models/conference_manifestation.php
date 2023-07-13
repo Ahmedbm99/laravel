@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class conference_manifestation extends Model
 {
-    use HasFactory;
+    protected $fillable = ['titre', 'lieu', 'prix' , 'dateDebut' , 'dateFin' , 'classe'  ];
 }

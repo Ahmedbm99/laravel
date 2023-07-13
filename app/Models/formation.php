@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class formation extends Model
 {
-    use HasFactory;
+    protected $fillable = ['titre', 'formateur', 'lieu' , 'prix' , 'dateDebut' , 'dateFin' ];
 }

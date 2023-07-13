@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class conference extends Model
 {
-    use HasFactory;
+    protected $fillable = ['type', 'annee', 'titre' , 'conference_name' , 'classe' , 'idFile'  ];
 }

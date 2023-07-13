@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class actualite extends Model
 {
-    use HasFactory;
+
+    protected $fillable = ['titre', 'description', 'date'];
 }

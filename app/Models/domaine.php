@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class domaine extends Model
 {
-    use HasFactory;
+    protected $fillable = ['titre', 'descriptions'  ];
+
 }

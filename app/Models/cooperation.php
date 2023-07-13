@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class cooperation extends Model
 {
-    use HasFactory;
+    protected $fillable = ['type', 'institution', 'intervenant' , 'dateDebut' , 'dateFin' , 'sujet' , 'idFile'  ];
 }

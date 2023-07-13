@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class chapitreOuvrage extends Model
 {
-    use HasFactory;
+    protected $fillable = ['annee', 'type', 'titre' , 'editeur' , 'lienEditeur' , 'ISBN/issn'  ];
 }

@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class auteur_pub extends Model
 {
-    use HasFactory;
+    protected $fillable = ['type', 'titre', 'auteur' , 'mail_auteur' , 'date' , 'soummissionnaire', 'approve'];
+
 }

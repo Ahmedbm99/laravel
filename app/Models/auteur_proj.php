@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class auteur_proj extends Model
 {
-    use HasFactory;
+    protected $fillable = ['type', 'titre', 'encadrant' , 'mail_encadrant' , 'date' , 'soummissionnaire', 'approve'];
+
 }
