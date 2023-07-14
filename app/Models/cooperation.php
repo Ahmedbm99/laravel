@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class cooperation extends Model
 {
-    protected $fillable = ['type', 'institution', 'intervenant' , 'dateDebut' , 'dateFin' , 'sujet' , 'idFile'  ];
+    protected $fillable = [
+        'type',
+        'institution',
+        'intervenant',
+        'dateDebut',
+        'dateFin',
+        'sujet',
+        'idFile',
+      ];
 }

@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class domaine extends Model
 {
-    protected $fillable = ['titre', 'descriptions'  ];
+    protected $fillable = [
+        'titre',
+        'descriptions' ,
+     ];
 
 }

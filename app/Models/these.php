@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class these extends Model
 {
+    protected $fillable = [
+        'titre',
+        'annee',
+        'memoire',
+        'sujet',
+        'anneeInscription',
+ ];
     use HasFactory;
 }

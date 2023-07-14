@@ -7,6 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class auteur_proj extends Model
 {
-    protected $fillable = ['type', 'titre', 'encadrant' , 'mail_encadrant' , 'date' , 'soummissionnaire', 'approve'];
+    protected $fillable = [
+        'type',
+        'titre',
+        'encadrant',
+        'mail_encadrant',
+        'date',
+        'soummissionnaire',
+        'approve',
+    ];
 
 }

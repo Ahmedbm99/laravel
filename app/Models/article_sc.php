@@ -7,5 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class article_sc extends Model
 {
-    protected $fillable = ['type', 'annee', 'titre' , 'lienDOI' , 'idFile' , 'datePublication', 'titreJournal', 'quartileJournal' , 'volume' , 'facteur' , 'indexation' , 'siteRevue'];
+    protected $fillable = [
+        'type',
+        'annee',
+        'titre',
+        'lienDOI',
+        'idFile',
+        'datePublication',
+        'titreJournal',
+        'quartileJournal',
+        'volume',
+        'facteur',
+        'indexation',
+        'siteRevue',
+    ];
 }

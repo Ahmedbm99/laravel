@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class conference_manifestation extends Model
 {
-    protected $fillable = ['titre', 'lieu', 'prix' , 'dateDebut' , 'dateFin' , 'classe'  ];
+    protected $fillable = [
+        'titre',
+        'lieu',
+        'prix',
+        'dateDebut',
+        'dateFin',
+        'classe',
+      ];
 }

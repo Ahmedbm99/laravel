@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class actualite extends Model
 {
 
-    protected $fillable = ['titre', 'description', 'date'];
+    protected $fillable = [
+        'titre',
+        'description',
+        'date',
+    ];
 }

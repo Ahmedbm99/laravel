@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class brevet extends Model
 {
-    protected $fillable = ['titre', 'annee', 'idFile' , 'sujet' , 'date' ];
+    protected $fillable = [
+        'titre',
+        'annee',
+        'idFile',
+        'sujet',
+        'date',
+     ];
 
 }

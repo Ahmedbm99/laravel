@@ -7,6 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class auteur_pub extends Model
 {
-    protected $fillable = ['type', 'titre', 'auteur' , 'mail_auteur' , 'date' , 'soummissionnaire', 'approve'];
+    protected $fillable = [
+        'type',
+        'titre',
+        'auteur',
+        'mail_auteur',
+        'date',
+        'soummissionnaire',
+        'approve',
+    ];
 
 }

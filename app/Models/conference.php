@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class conference extends Model
 {
-    protected $fillable = ['type', 'annee', 'titre' , 'conference_name' , 'classe' , 'idFile'  ];
+    protected $fillable = [
+        'type',
+        'annee',
+        'titre',
+        'conference_name',
+        'classe',
+        'idFile',
+      ];
 }
